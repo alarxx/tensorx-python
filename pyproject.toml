@@ -1,0 +1,24 @@
+[build-system]
+requires = ["scikit-build-core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "tensorx-python" # distributive name for PyPI
+version = "0.0.2"
+description = "Python bindings for the Tensor-library"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name="Alar Akilbekov", email="alar.akilbekov@gmail.com" }]
+license = "MPL-2.0"
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/alarxx/tensorx-python"
+Issues = "https://github.com/alarxx/tensorx-python/issues"
+
+[tool.scikit-build]
+wheel.packages = ["src/tensorx"]
