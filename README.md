@@ -71,6 +71,8 @@ if __name__ == "__main__":
     print("m.get(1, 1):", m.get(1, 1))
 ```
 
+---
+
 Image processing example:
 ```sh
 import tensorx
